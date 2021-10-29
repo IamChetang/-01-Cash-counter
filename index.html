@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Counter</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header_title">Cash Counter</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="bill-input">
+          <label for="bill-amount">Bill Amount</label>
+          <input name="bill-amount" id="bill-amount" />
+        </div>
+        <div class="cash-input">
+          <label for="amount-paid">Cash Given</label>
+          <input name="amount-paid" id="amount-paid" />
+        </div>
+        <div class="bill-input">
+          <button id="btn-calculate" class="btn-calculate">Calculate</button>
+        </div>
+        <p id="error-message" class="error-message"></p>
+        <div id="success" class="success">
+          <h3 class="success-message" id="success-message"></h3>
+          <div class="header">
+            <p class="value">Value</p>
+            <p class="count">Count</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
